@@ -3,7 +3,7 @@
 Linkedstack::Linkedstack()
 {
 
-}
+}//Constructor vacio de la clase LinkedStack
 
 void Linkedstack::push(Object* objeto)
 {
@@ -23,7 +23,8 @@ void Linkedstack::push(Object* objeto)
 		size++;
 
 	}
-}
+}//Método para agregar un objeto a la pila.
+
 
 Object* Linkedstack::pop()
 {
@@ -46,12 +47,12 @@ Object* Linkedstack::pop()
 		return salida;
 
 	}
-}
+}//Método para quitar y devolver el elemento superior de la pila.
 
 Object* Linkedstack::top()
 {
 	return this->tope->getcontenido();
-}
+}//Método para obtener el elemento superior de la pila sin quitarlo.
 
 bool Linkedstack::isEmpty()
 {
@@ -60,13 +61,13 @@ bool Linkedstack::isEmpty()
 		return true;
 	}
 	return false;
-}
+}//Método para verificar si la pila está vacía
 
 void Linkedstack::clear()
 {
 	this->tope = nullptr;
 	size = 0;
-}
+}//Método para vaciar la pila
 
 void Linkedstack::print()
 {
@@ -76,5 +77,5 @@ void Linkedstack::print()
 		cout << "[" << nodoaux->getcontenido()->toString() << "]" << endl;
 		nodoaux = nodoaux->getsiguiente();
 	}
-}
+}//Método para imprimir todos los elementos de la pila
 
