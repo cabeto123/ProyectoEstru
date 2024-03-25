@@ -16,7 +16,7 @@ public:
 	~Alumno(); // Destructor
 	virtual string toString() override; // Pasar todo a tostring
 	virtual bool equals(Object*) override; // Compara el numero de cuenta de dos Alumnos
-	virtual Object* copy() override; //Envia una copia del Alumno
+	virtual Object* copy() override; //Crea y envia una copia de un Alumno
 	string getNombre(); //Getter de atributo Nombre
 	string getCuenta(); //Getter de atributo Cuenta
 	void setNombre(string); //Setter de atributo Nombre
