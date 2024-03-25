@@ -2,7 +2,7 @@
 
 LinkedQueue::LinkedQueue()
 {
-}
+}//Constructor vacío de la LinkedQueue
 
 void LinkedQueue::queue(Object* objeto)
 {
@@ -18,7 +18,7 @@ void LinkedQueue::queue(Object* objeto)
 		ultimo->setsiguiente(NULL);
 		size++;
 	}
-}
+}//Agrega un elemento a la LinkedQueue si el tamaño es mayor a 0. Si es igual a 0, asigna el objeto ingresado en un nodo inicializado como primero y ultimo en la cola
 
 Object* LinkedQueue::dequeue()
 {
@@ -35,7 +35,7 @@ Object* LinkedQueue::dequeue()
 		ultimo = NULL;
 	return temp->getcontenido();
 	
-}
+}//Si hay Nodos en la cola, recupera el primero en un nodo temp y asigna el siguiente como el primero. Retorna el objeto en el nodo temp
 
 Object* LinkedQueue::peek()
 {
@@ -43,7 +43,7 @@ Object* LinkedQueue::peek()
 		return nullptr;
 	return primero->getcontenido();
 	
-}
+}//Retorna el objeto del primer de no estar vacio
 
 void LinkedQueue::printQueue()
 {
@@ -57,7 +57,7 @@ void LinkedQueue::printQueue()
 		cout << temp->getcontenido()->toString()<<"}\n";
 	}
 	
-}
+}//Imprime toda la cola
 
 void LinkedQueue::dequeueAll()
 {
@@ -66,10 +66,10 @@ void LinkedQueue::dequeueAll()
 	ultimo = NULL;
 	primero = NULL;
 	size = 0;
-}
+}//Desconecta la cola entera y asi, eliminandola
 
 LinkedQueue::~LinkedQueue()
 {
 	if (ultimo) 
 		delete ultimo;
-}
+}//Destructor de LinkedQueue

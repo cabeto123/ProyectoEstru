@@ -7,7 +7,7 @@ ArrayQueue::ArrayQueue()
 	size = 0;
 	maxSize = 50;
 	array = new Object*[maxSize];
-}
+}//Constructor del ArrayQueue
 void ArrayQueue::expandir()
 {
 	maxSize += 5;
@@ -18,7 +18,7 @@ void ArrayQueue::expandir()
 	}
 	delete[] array;
 	array = temp;
-}
+}//Metodo incrementa tamaño del arreglo creando uno nuevo con un tamaño mayor y llena este nuevo arreglo con los elementos del antiguo.
 
 void ArrayQueue::queue(Object* obj)
 {
@@ -26,7 +26,7 @@ void ArrayQueue::queue(Object* obj)
 		expandir();
 	size += 1;
 	array[size - 1] = obj;
-}
+}//Metodo agrega al final de la cola un nuevo elemento. Si la posición de este elemento no existe, expande el arreglo
 
 Object* ArrayQueue::dequeue()
 {
@@ -43,7 +43,7 @@ Object* ArrayQueue::dequeue()
 	}
 	else
 		return nullptr;
-}
+}//Crea un object temporal, le asigna el valor del elemento en pos 0. Elimina la pos 0 del arreglo, acomoda el resto de la cola y retorna el objeto temporal
 
 Object* ArrayQueue::peek()
 {
@@ -51,7 +51,7 @@ Object* ArrayQueue::peek()
 		return array[0];
 	else
 		return nullptr;
-}
+}//Retorna el elemento en la posicion 0
 
 void ArrayQueue::printQueue()
 {
@@ -62,7 +62,7 @@ void ArrayQueue::printQueue()
 		else
 			cout << array[i]->toString();
 	cout << "}" << endl;
-}
+}//Imprime el arreglo
 
 void ArrayQueue::dequeueAll()
 {
@@ -72,7 +72,7 @@ void ArrayQueue::dequeueAll()
 	}
 	delete[] array;
 	size = 0;
-}
+}//Elimina el arreglo entero
 
 ArrayQueue::~ArrayQueue()
 {
@@ -82,4 +82,4 @@ ArrayQueue::~ArrayQueue()
 	}
 	delete[] array;
 	size = 0;
-}
+}//Destructor del ArrayQueue
