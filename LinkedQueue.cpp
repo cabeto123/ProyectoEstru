@@ -61,11 +61,11 @@ void LinkedQueue::printQueue()
 
 void LinkedQueue::dequeueAll()
 {
-	for (size_t i = 0; i <= size; i++)
-	{
-		dequeue();
-	}
-	//size = 0;
+	if (ultimo) 
+		delete ultimo;
+	ultimo = NULL;
+	primero = NULL;
+	size = 0;
 }
 
 LinkedQueue::~LinkedQueue()
