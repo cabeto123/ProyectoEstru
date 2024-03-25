@@ -127,25 +127,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Alumno.cpp" />
     <ClCompile Include="ArrayList.cpp" />
+    <ClCompile Include="ArrayQueue.cpp" />
     <ClCompile Include="ArrayStack.cpp" />
+    <ClCompile Include="Integer.cpp" />
     <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="LinkedQueue.cpp" />
     <ClCompile Include="Linkedstack.cpp" />
+    <ClCompile Include="Lista.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Object.cpp" />
-    <ClCompile Include="ProyectoEstructuradedatos1.cpp" />
+    <ClCompile Include="ProyectoEstructura.cpp" />
     <ClCompile Include="Simbolo.cpp" />
-    <ClCompile Include="TDAPILA.cpp" />
+    <ClCompile Include="TDACola.cpp" />
+    <ClCompile Include="TDAPila.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Alumno.h" />
     <ClInclude Include="ArrayList.h" />
+    <ClInclude Include="ArrayQueue.h" />
     <ClInclude Include="ArrayStack.h" />
+    <ClInclude Include="Integer.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Linkedstack.h" />
+    <ClInclude Include="Lista.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Simbolo.h" />
-    <ClInclude Include="TDAPILA.h" />
+    <ClInclude Include="TDACola.h" />
+    <ClInclude Include="TDAPila.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

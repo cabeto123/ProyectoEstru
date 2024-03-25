@@ -1,5 +1,5 @@
 #pragma once
-#include "TDAPILA.h"
+#include "TDAPila.h"
 class Linkedstack :public TDAPila
 {
 public:
