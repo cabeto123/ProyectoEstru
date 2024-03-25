@@ -244,7 +244,7 @@ void menuListas() {
 				case 8: {
 					//Opcion 8
 
-					cout << "\n Ingrese la posicion en la que desea conseguir el elemento siguiente: " << endl;
+					cout << "\n Ingrese la posicion en la que desea conseguir el elemento anterior: " << endl;
 					int posicionElemento;
 					cin >> posicionElemento;
 
