@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArrayList.cpp" />
+    <ClCompile Include="ArrayStack.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="Linkedstack.cpp" />
     <ClCompile Include="Node.cpp" />
@@ -138,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayList.h" />
+    <ClInclude Include="ArrayStack.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Linkedstack.h" />
     <ClInclude Include="Node.h" />

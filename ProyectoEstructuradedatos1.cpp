@@ -3,6 +3,7 @@
 #include "ArrayList.h" 
 #include "LinkedList.h" 
 #include "LinkedStack.h"
+#include "ArrayStack.h"
 #include "Simbolo.h"
 #include "Object.h"
 using namespace std;
@@ -112,6 +113,7 @@ int main() {
     int operacioneslinkedstack = 4;
     bool salir = false;
     Linkedstack* l = new Linkedstack();
+    ArrayStack* ast = new ArrayStack();
     Simbolo* s;
     Simbolo* sacar;
     char simbol;
@@ -144,7 +146,40 @@ int main() {
                 opciontipopila = menutipopila();
                 switch (opciontipopila)
                 {
-                case 1://arraystack
+                case 1:
+                    while (operacioneslinkedstack != 7) {
+                        operacioneslinkedstack = operacionespila();
+                        switch (operacioneslinkedstack)
+                        {
+                        case 1:cout << "Digite el simbolo :";
+                            cin >> simbol;
+                            s = new Simbolo(simbol);
+                            ast->push(s);
+                            break;
+                        case 2:sacar = dynamic_cast<Simbolo*>(ast->pop());
+                            cout << "El elemento sacado es :" + sacar->toString() << endl;
+                            break;
+                        case 3: sacar = dynamic_cast<Simbolo*>(ast->top());
+                            cout << "El tope es " + sacar->toString() << endl;
+                            break;
+                        case 4:
+                            if (ast->isEmpty())
+                            {
+                                cout << "La pila esta vacia" << endl;
+                            }
+                            else {
+                                cout << "La pila no esta vacia" << endl;
+                            }
+                            break;
+                        case 5:ast->print();
+                            break;
+                        case 6:ast->clear();
+                            cout << "La pila se ha vaciado" << endl;
+                            break;
+                        }
+                    }
+                }
+            }
                     break;
                 case 2:
                     while (operacioneslinkedstack != 7) {
