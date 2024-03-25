@@ -72,7 +72,7 @@ void menuListas() {
 		if (opcion == 1)
 			list = new ArrayList();
 		else if (opcion == 2)
-			/*list = new LinkedList();*/
+			list = new LinkedList();
 
 		//sub menu de opciones
 		if (opcion != 3) {

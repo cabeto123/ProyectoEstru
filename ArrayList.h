@@ -37,14 +37,9 @@ public:
 	// Metodo recupera
 	virtual Object* recupera(int) override; 
 
-	// Metodo localiza
-	virtual Lista* localizaTodos(Object*) override; 
 
 	// Metodo imprime
 	virtual void imprime() override; 
-
-	// Metodo suprimeTodos
-	virtual void suprimeTodos(Object*) override; 
 
 	// Metodo "primero"
 	virtual Object* primero() override; 

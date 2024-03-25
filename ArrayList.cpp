@@ -36,22 +36,7 @@ Object* ArrayList::recupera(int pos) {
 		return NULL;
 }
 
-void ArrayList::suprimeTodos(Object* objeto) {
-	int nuevaPosicion = 0;
-	int tam = size;
-	for (int i = 0; i < tam; i++) {
-		if (!objeto->equals(array[i])) {
-			Object* pointer = array[i];
-			array[i] = NULL;
-			array[nuevaPosicion] = pointer;
-			nuevaPosicion++;
-		}	
-		else {
-			delete array[i]; 
-			size--;
-		}
-	}
-}
+
 
 bool ArrayList::suprime(int pos) {
 	if (!isEmpty()) {
@@ -95,13 +80,6 @@ int ArrayList::localiza(Object* objeto) {
 
 }
 
-// Metodo para localizar todos los elementos del ArrayList
-Lista* ArrayList::localizaTodos(Object* objeto) {
-	ArrayList* nuevaLista = new ArrayList();
-	for (int i = 0; i < size; i++) 
-		if (array[i]->equals(objeto)) nuevaLista->append(new Integer(i + 1));
-	return nuevaLista;
-}
 
 Object* ArrayList::siguiente(int par) {
 	if (par > 0 && par <= size) return array[par];

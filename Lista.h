@@ -26,15 +26,11 @@ public:
 
 	virtual Object* recupera(int) = 0;
 
-	virtual Lista* localizaTodos(Object*) = 0;
-
 	int getSize();
 
 	bool isEmpty() {return size == 0;};
 
 	virtual void imprime() = 0;
-
-	virtual void suprimeTodos(Object*) = 0;
 
 	// Regresa el primer elemento de la lista, si el elemento existe
 	virtual Object* primero() = 0;
