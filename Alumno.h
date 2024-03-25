@@ -15,10 +15,10 @@ public:
 	Alumno(string, string); // Constructor sobrecargado
 	~Alumno(); // Destructor
 	virtual string toString() override; // Pasar todo a tostring
-	virtual bool equals(Object*) override; // Encontrar nombres iguales
-	virtual Object* copy() override;
-	string getNombre();
-	string getCuenta();
-	void setNombre(string);
-	void setCuenta(string);
+	virtual bool equals(Object*) override; // Compara el numero de cuenta de dos Alumnos
+	virtual Object* copy() override; //Envia una copia del Alumno
+	string getNombre(); //Getter de atributo Nombre
+	string getCuenta(); //Getter de atributo Cuenta
+	void setNombre(string); //Setter de atributo Nombre
+	void setCuenta(string); //Setter de atributo Cuenta
 };
