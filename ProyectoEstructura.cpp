@@ -434,7 +434,7 @@ void menuCola() {
 
 		int opcion = -1;
 		int num = -1;
-		if (input != 4) {
+		if (input != 3) {
 			do {
 				string inputC;
 				string menuCola = " \n\n--> OPERACIONES DE COLAS <--\n";
