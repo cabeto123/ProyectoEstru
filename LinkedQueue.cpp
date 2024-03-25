@@ -70,8 +70,6 @@ void LinkedQueue::dequeueAll()
 
 LinkedQueue::~LinkedQueue()
 {
-	for (size_t i = 0; i < size; i++)
-	{
-		dequeue();
-	}
+	if (ultimo) 
+		delete ultimo;
 }
